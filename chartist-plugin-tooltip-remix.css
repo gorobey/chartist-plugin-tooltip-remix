@@ -1,0 +1,55 @@
+.chart{
+	height:300px;
+}
+.ct-label{
+	font-size:.9em;
+}
+.ct-label.ct-horizontal{
+	/* Safari */
+	-webkit-transform: rotate(-30deg);
+	
+	/* Firefox */
+	-moz-transform: rotate(-30deg);
+	
+	/* IE */
+	-ms-transform: rotate(-30deg);
+	
+	/* Opera */
+	-o-transform: rotate(-30deg);
+	
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.chartist-tooltip {
+	position: absolute;
+	display: inline-block;
+	opacity: 0;
+	min-width: 5em;
+	padding: .5em;
+	background: #f5f5f5;
+	color: #333;
+	text-align: center;
+	pointer-events: none;
+	z-index: 1;
+	border:1px solid #ddd;
+	border-radius:3px;
+	-webkit-transition: opacity .2s linear;
+	-moz-transition: opacity .2s linear;
+	-o-transition: opacity .2s linear;
+	transition: opacity .2s linear;
+}
+.chartist-tooltip:before {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	margin-left: -15px;
+	border: 15px solid transparent;
+	border-top-color: #ddd;
+}
+.chartist-tooltip.tooltip-show {
+	opacity: .9;
+}

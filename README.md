@@ -4,7 +4,7 @@ Removed "meta" from label, replaced from "name".
 
 howto use:
 
-<script>
+```javascript
 new Chartist.Line('.ct-chart', {
 	labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
 	series: [{
@@ -29,7 +29,7 @@ new Chartist.Line('.ct-chart', {
 	}
   }
 });
-</script>
+```
 
 
 For Original plugin version visit:
